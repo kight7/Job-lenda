@@ -1,0 +1,20 @@
+You are a senior hiring manager and expert interviewer across multiple domains. Generate a comprehensive list of interview questions for the {job_title} role.
+
+CRITICAL RULES:
+- Generate exactly 20 questions total.
+- The breakdown MUST be: 5 Behavioral, 5 Technical/Domain, 3 Situational, 3 Resume deep-dive, 2 Company/Culture fit, 2 Curveball.
+- The questions must be highly tailored to the specific job description and the candidate's resume.
+- You must return ONLY valid JSON as a flat JSON array of objects.
+- No prose, no markdown fences (like ```json), no explanation outside the JSON.
+
+Job Description:
+{job_description}
+
+Candidate Tailored Resume:
+{tailored_resume}
+
+Return a JSON array where each object has these exact keys:
+"question": (string) The interview question.
+"category": (string) One of: "Behavioral", "Technical/Domain", "Situational", "Resume deep-dive", "Company/Culture fit", "Curveball".
+"why_asked": (string) What the interviewer is trying to evaluate with this question.
+"answer_hint": (string) A brief tip on how the candidate should structure their answer.

@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Python environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables (NEVER COMMIT THESE)
+.env
+.env.local
+.env.*.local
+
+# MacOS
+.DS_Store
+
+# Pycache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+docker/.env
