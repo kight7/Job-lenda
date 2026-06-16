@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM mcr.microsoft.com/playwright/python:v1.44.0-jammy
 
 # Set working directory
 WORKDIR /app
@@ -9,9 +9,8 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Playwright's chromium browser and its required system dependencies
+# The base image already has the system dependencies! We just download the Chromium binary.
 RUN playwright install chromium
-RUN playwright install-deps chromium
 
 # Copy the rest of the application
 COPY . .
