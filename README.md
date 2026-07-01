@@ -2,6 +2,8 @@
 
 This project is an automated AI-powered agent designed to help search, score, tailor resumes, and apply for jobs. Below is a breakdown of the project's structure and what each folder is responsible for:
 
+Web app URL : https://job-scrapper-9dd8a.web.app
+
 ## Project Structure
 
 ### `backend/`
